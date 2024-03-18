@@ -11,10 +11,21 @@ a.btn {
     cursor: pointer;
     outline: none;
     border: 1px solid var(--c--black);
+    cursor: pointer;
+    transition: .45s ease-in-out background-color, .45s ease-in-out color, .45s ease-in-out border-color;
+    @include hover-focus-active {
+        background-color: var(--c--primary);
+        border-color: var(--c--primary);
+        color: var(--c--white);
+    }
     &.btn-white {
         background-color: var(--c--white);
         color: var(--c--black);
         border: 1px solid var(--c--white);
-
+        @include hover-focus-active {
+            background-color: var(--c--primary);
+            border-color: var(--c--primary);
+            color: var(--c--white);
+        }
     }
 }

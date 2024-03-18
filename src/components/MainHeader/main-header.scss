@@ -41,6 +41,7 @@
                     text-transform: uppercase;
                     border-bottom: 3px solid transparent;
                     text-decoration: none;
+                    transition: .45s ease color;
                     @include hover-focus-active {
                         color: var(--c--primary);
                     }
