@@ -7,9 +7,10 @@ type Props = {}
 const MainHeader : FC = (props: Props) => {
 
   const [isHidden, setIsHidden] = useState(false);
-  let oldScroll = 0;
+
 
   useEffect(() => {
+    let oldScroll = 0;
     const handleScroll = () => {
       if ( window.scrollY < window.innerHeight / 2 ) {
         setIsHidden(false);
