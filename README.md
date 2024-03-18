@@ -1,6 +1,6 @@
 # Progetto React Test
 
-Questo è un progetto di test creato in React e TypeScript come parte di un colloquio.
+Questo è un progetto di test creato in React e TypeScript.
 
 ## Funzionalità
 
@@ -23,16 +23,19 @@ Questo è un progetto di test creato in React e TypeScript come parte di un coll
 
 ## Istruzioni per l'installazione
 
-1. Clona o scarica il repository
+1. Clona o scarica il repository sulla tua macchina
 
 2. Naviga nella directory del progetto:
-### `cd nome-repository`
+```bash
+cd nome-repository
+```
 
 3. Installa le dipendenze del progetto:
-### `npm install`
+```bash
+npm install
+```
 
 4. Avvia l'applicazione:
-### `npm start`
-
-## Licenza
-Questo progetto è concesso in licenza con MIT License.
+```bash
+npm start
+```
