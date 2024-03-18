@@ -1,0 +1,55 @@
+@import '../../../styles/global/all';
+
+article {
+    img {
+        display: block;
+        width: 100%;
+    }
+    .main-info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+        padding: 1rem;
+    }
+    .img-wrapper {
+        position: relative;
+        .img-hover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            h4 {
+                background-color: var(--c--gray);
+                font-size: 1.4rem;
+                padding: .6rem 1rem;
+                color: var(--c--white);
+            }
+        }
+    }
+    .variant-carousel {
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        gap: 1rem;
+        & > div {
+            min-width: 40%;
+            position: relative;
+            .detail {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                position: absolute;
+                h4 {
+                    background-color: var(--c--gray);
+                    font-size: 1.2rem;
+                    padding: .4rem .8rem;
+                    color: var(--c--white);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import '../../Styles/global/all';
+
+#header {
+    border-bottom: 1px solid var(--c--black);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header--height);
+    z-index: 9999;
+    transform: translateY(0);
+    transition: .45s ease transform;
+    &.hidden {
+        transform: translateY(-100%);
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100%;
+        & .header-logo {
+            img {
+                height: 100%;
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                gap: 2rem;
+                margin: 0;
+                height: 100%;
+                li a {
+                    color: var(--c--black);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    border-bottom: 3px solid transparent;
+                    text-decoration: none;
+                    @include hover-focus-active {
+                        color: var(--c--primary);
+                    }
+                    &.active {
+                        border-bottom: 3px solid var(--c--black);
+                    }
+                }
+            }
+        }
+        #search-form {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            height: 100%;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        nav,
+        .header-content #search-form {
+            display: none;
+        }
+    }
+}

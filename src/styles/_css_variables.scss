@@ -1,0 +1,21 @@
+:root{
+    --c--black: #000000;
+    --c--white: white; 
+  
+    --c--primary--light--extra: #a5cfe5;
+    --c--primary--light: #77b6d5;
+    --c--primary: #3e8ab2;
+    --c--primary--dark: #296789;
+    --c--primary--dark--extra: #0f4160;
+    --c--primary--gray: #6A7188;
+  
+    --c--gray--light: #f7f7f7;
+    --c--gray: #8e8e95;
+    --c--gray--dark: #4c4c4c;
+    
+    --f--color: var(--c--black);
+    --f--family: "Roboto", sans-serif;
+    --f--size: 1.6rem;
+
+    --header--height: 6rem;
+}

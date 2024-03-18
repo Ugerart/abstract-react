@@ -1,0 +1,33 @@
+@import '../../styles/global/all';
+
+.products-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 3fr);
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include media-breakpoint-down(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+    }
+    .response-block {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        text-align: center;
+        background-color: var(--c--gray--light);
+        min-height: clamp(10rem, 40vh ,30rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        // @include media-breakpoint-down(md) {
+        //     grid-column-end: 5;
+        // }
+        // @include media-breakpoint-down(md) {
+        //     grid-template-columns: 1fr;
+        // }
+    }
+}

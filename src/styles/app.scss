@@ -1,0 +1,66 @@
+// Importa Bootstrap SCSS
+// 1. Includi funzioni
+@import "/node_modules/bootstrap/scss/functions";
+
+// 2. Sovrascrivi eventuali variabili Bootstrap
+@import "./override/general";
+
+// 3. Includi il resto dei fogli di stile Bootstrap richiesti.
+@import "node_modules/bootstrap/scss/bootstrap-utilities";
+
+// 4. Includi qualsiasi componente di Bootstrap che desideri.
+@import "/node_modules/bootstrap/scss/root";
+@import "/node_modules/bootstrap/scss/reboot";
+@import "/node_modules/bootstrap/scss/containers";
+@import "/node_modules/bootstrap/scss/grid";
+
+// 5. Aggiungi ulteriore codice personalizzato
+@import "./global/all";
+@import "./css_variables";
+@import "./typography";
+
+// 6. Definisci il tema
+@import "./theme/atom/btn";
+@import "./theme/atom/input";
+@import "./theme/template/page";
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 62.5%;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--c--white);
+    color: var(--c--black);
+    background: var(--c--white);
+    font-family: var(--f--family);
+    font-size: var(--f--size);
+    line-height: 1.1;
+    margin: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+main {
+    
+}
+
+::selection {
+    background: var(--c--primary);
+    color: var(--c--white);
+}
+
+::-moz-selection {
+    background: var(--c--primary);
+    color: var(--c--white);
+}

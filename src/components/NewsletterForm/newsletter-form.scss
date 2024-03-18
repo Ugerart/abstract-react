@@ -1,0 +1,19 @@
+@import '../../styles/global/all';
+
+.newsletter-form--wrapper {
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        .form-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+}

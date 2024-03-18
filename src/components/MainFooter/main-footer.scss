@@ -1,0 +1,21 @@
+@import '../../styles/global/all';
+
+#footer {
+    background-color: var(--c--black);
+    color: var(--c--white);
+    padding: 2rem 0;
+    .footer--content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .social-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
+        }
+    }
+}
